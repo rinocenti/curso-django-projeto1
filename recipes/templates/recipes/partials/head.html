@@ -87,6 +87,7 @@
         }
 
         .main-header-container {
+            display: flex;
             background: var(--color-primary-dark);
         }
 
@@ -151,6 +152,16 @@
 
         .search-form:focus-within .search-button {
             color: var(--color-primary)
+        }
+
+        .main-content {
+            padding-top: 0;
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large);
         }
     </style>
 
